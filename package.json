@@ -4,7 +4,15 @@
   "description": "Backend GraphQL server for Knife",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "standard --fix",
+      "prettier-standard",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -20,5 +28,13 @@
   "dependencies": {
     "apollo-engine": "^1.1.1",
     "graphql-yoga": "^1.14.6"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.1.3",
+    "prettier-standard": "^8.0.1",
+    "standard": "^11.0.1"
   }
 }
