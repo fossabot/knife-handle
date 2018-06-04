@@ -4,6 +4,8 @@
   "description": "Backend GraphQL server for Knife",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
+    "dev": "nodemon index.js",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged"
   },
@@ -34,6 +36,7 @@
     "@commitlint/config-conventional": "^7.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^7.1.3",
+    "nodemon": "^1.17.5",
     "prettier-standard": "^8.0.1",
     "standard": "^11.0.1"
   }
