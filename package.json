@@ -1,0 +1,24 @@
+{
+  "name": "knife-handle",
+  "version": "0.0.0",
+  "description": "Backend GraphQL server for Knife",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/multi-cell/knife-handle.git"
+  },
+  "author": "Graham Barber",
+  "private": true,
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/multi-cell/knife-handle/issues"
+  },
+  "homepage": "https://github.com/multi-cell/knife-handle#readme",
+  "dependencies": {
+    "apollo-engine": "^1.1.1",
+    "graphql-yoga": "^1.14.6"
+  }
+}
