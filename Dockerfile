@@ -3,4 +3,4 @@ COPY . /server
 WORKDIR /server
 RUN npm ci
 EXPOSE 4000
-CMD [ "node", "." ]
+CMD [ "npm", "start" ]
