@@ -2,4 +2,8 @@
 node_modules/
 coverage/
 .linstagedrc
+.prettierrc
+LICENSE
+.babelrc
 README.md
+*.spec.js
