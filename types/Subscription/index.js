@@ -1,4 +1,6 @@
-const typeDef = `
+import { gql } from 'apollo-server'
+
+const typeDef = gql`
   type Subscription {
     counter: Counter!
   }
@@ -12,10 +14,7 @@ const resolvers = {
           .toString(36)
           .substring(2, 15) // random channel name
         let count = 0
-        setInterval(
-          () => pubsub.publish(channel, { counter: { count: count++ } }),
-          2000
-        )
+        setInterval(() => pubsub.publish(channel, { counter: { count: count++ } }), 2000)
         return pubsub.asyncIterator(channel)
       }
     }

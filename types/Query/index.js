@@ -1,4 +1,6 @@
-const typeDef = `
+import { gql } from 'apollo-server'
+
+const typeDef = gql`
   type Query {
     hello(name: String): String!
   }
